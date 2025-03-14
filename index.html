@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outdoor Dreams</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="h-screen">
+  <!-- Start Upper Hero Overlay -->
+  <div
+    class="absolute z-10 top-0 left-0 right-0 bg-gradient-to-b from-[#eaeaeabd] to-transparent h-[250px] opacity-100">
+  </div>
+  <!-- End Upper Hero Overlay -->
+
+  <!-- Start Navbar -->
+  <nav class="lg:absolute z-10 bg-white lg:bg-transparent py-2 lg:py-12 left-0 right-0">
+    <div class="lg:w-[90%] mx-auto px-6 lg:px-0">
+      <div class="flex justify-between items-center">
+        <a class="z-10" href="/">
+          <img class="w-[220px] opacity-70 xl:w-[300px]" src="images/logo.svg" alt="Logo">
+        </a>
+        <ul id="ul" class="absolute bg-bage flex flex-col justify-center top-0 left-0 right-0 bottom-0 
+          lg:flex-row lg:static lg:bg-transparent gap-8 uppercase z-10 font-bold md:text-lg 
+          lg:text-base 2xl:text-xl transition-all duration-300 scale-50 lg:scale-100 origin-canter">
+          <button id="close" class="absolute lg:hidden top-5 right-5 cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-16">
+              <path fill-rule="evenodd"
+                d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+
+          <li class="group flex flex-col items-center justify-center relative">
+            <span id="toggle-menu" class="cursor-pointer flex gap-2 items-center text-[.85em]">
+              services
+              <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="size-6 transition-transform duration-200 lg:group-hover:rotate-180">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </span>
+
+            <ul id="menu-items" class="rounded-none hidden mt-5 lg:mt-0 lg:group-hover:flex flex-col lg:group-hover:opacity-100 lg:opacity-0 
+                lg:absolute lg:bg-[#eae6e6] z-10 space-y-8 px-5 py-5 text-nowrap transition-all duration-300 
+                lg:left-0 lg:top-full lg:shadow-md ">
+              <li class="flex justify-center lg:block">
+                <a href="/" class="  relative after:absolute after:left-0 after:top-6 after:w-0 after:h-[3px] 
+                    after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full text-[.85em]">
+                  patios
+                </a>
+              </li>
+              <li class="flex justify-center lg:block">
+                <a href="/" class=" text-[.85em] relative after:absolute after:left-0 after:top-6 after:w-0 after:h-[3px] 
+                    after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">
+                  swimming pools
+                </a>
+              </li>
+              <li class="flex justify-center lg:block">
+                <a href="/" class=" text-[.85em] relative after:absolute after:left-0 after:top-6 after:w-0 after:h-[3px] 
+                    after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">
+                  decks
+                </a>
+              </li>
+              <li class="flex justify-center lg:block">
+                <a href="/" class="text-[.85em] relative after:absolute after:left-0 after:top-6 after:w-0 after:h-[3px] 
+                    after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">
+                  outdoor kitchens
+                </a>
+              </li>
+              <li class="flex justify-center lg:block">
+                <a href="/" class="text-[.85em] relative after:absolute after:left-0 after:top-6 after:w-0 after:h-[3px] 
+                    after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">
+                  outdoor fireplaces
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="flex items-center justify-center">
+            <a href="/"
+              class="relative after:absolute  after:left-0 after:top-7 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full text-[.85em]">
+              projects
+            </a>
+          </li>
+          <li class="flex items-center justify-center">
+            <a href="/"
+              class="relative after:absolute  after:left-0 after:top-7 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full text-[.85em]">
+              process
+            </a>
+          </li>
+          <li class="flex items-center justify-center">
+            <a href="/"
+              class="bg-[#6e9c4d] lg:bg-[#40403a] text-white xl:text-lg tracking-[3px] py-2 font-medium px-6 hover:bg-black/75 transition-all">get
+              started
+            </a>
+          </li>
+        </ul>
+        <button id="navTab"
+          class="cursor-pointer z-10 lg:hidden bg-blue-500/80 text-white rounded-full p-2 hover:opacity-70">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-7">
+            <path fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Start Hero Section  -->
+  <div class="h-[560px] md:h-[600px] lg:h-[950px] xl:h-screen bg-[#fcf9f7]">
+    <div class="h-[400px] lg:h-[800px] flex justify-start items-center  xl:h-screen relative">
+      <div class="absolute animate-image top-0 right-0 h-full w-full lg:w-[72%] overflow-hidden">
+        <img class="w-full h-full object-cover animate-kenBurns" src="/images/heroImg.webp" alt="">
+      </div>
+      <!-- arrow -->
+      <img class="hidden lg:block absolute bottom-5 left-28" src="/images/home-hero-arrow.svg" alt="">
+      <!-- card -->
+      <div
+        class="bg-white shadow-card animate-card left-1/2 md:left-[12%] -translate-x-1/2 md:translate-0 absolute mt-64 lg:mt-32 py-8 md:py-12 w-[280px] md:w-[370px] xl:w-[650px] rounded-lg">
+        <div class="hidden md:block absolute bg-blue-500 w-36 xl:w-56 h-0.5 top-28  -right-20 -rotate-45">
+
+        </div>
+        <div class="px-8 xl:px-20 lg:py-5">
+          <h1 class="text-4xl md:text-5xl xl:text-8xl lg:font-[100]">
+            The best memories are made outdoors
+          </h1>
+          <a class="bg-[#7aac57] inline-block text-white px-5 md:px-7 xl:px-10 py-2 lg:py-2.5 lg:text-md xl:text-xl lg:font-medium capitalize mt-5 xl:mt-12 hover:opacity-80 hover:underline"
+            href="/">get started</a>
+          <span class="block text-sm xl:text-xl mt-4 text-[#7e7e72]">Established in 2005</span>
+        </div>
+        <div class="mt-10 xl:mt-4 px-8">
+          <img src="/images/ads.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  End Hero Section-->
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

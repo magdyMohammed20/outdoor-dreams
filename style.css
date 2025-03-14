@@ -1,0 +1,107 @@
+body {
+
+    color: #40403a;
+    letter-spacing: 1px;
+}
+
+::selection {
+    background-color: #6e9c4d;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: #6e9c4d;
+    color: white;
+}
+
+* {
+    font-family: Montserrat,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
+}
+
+h1 {
+    font-family: Georgia, Times, serif;
+}
+
+/* navbar */
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.animate-navbar {
+    animation: slideDown 0.8s ease-out forwards;
+    will-change: transform, opacity;
+}
+
+
+/* card */
+
+@keyframes slideTop {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-card {
+    animation: slideTop 0.8s ease-out forwards;
+}
+
+/* image */
+
+@keyframes slideTopImage {
+    from {
+        transform: translateY(15%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-image {
+    animation: slideTopImage 0.8s ease-out forwards;
+}
+
+/* image hero */
+
+@keyframes kenBurns {
+    from {
+        transform: scale(1.2) translateX(-5%);
+        transform-origin: center;
+    }
+
+    to {
+        transform: scale(1.2) translateX(5%);
+        transform-origin: center;
+    }
+}
+
+.animate-kenBurns {
+    animation: kenBurns 25s cubic-bezier(.39, .575, .565, 1) 0s 1 normal forwards;
+}
+
+.gap-24 {
+    gap: 32px;
+}
