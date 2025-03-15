@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'FS Neruda Light';
+    src: url('./fonts/FS\ Neruda\ Light.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
 
     color: #40403a;
     letter-spacing: 1px;
+    font-size: 21.1px;
 }
 
 ::selection {
@@ -23,7 +32,13 @@ body {
 }
 
 h1 {
-    font-family: Georgia, Times, serif;
+    font-family: 'FS Neruda Light';
+    letter-spacing: .021341463em;
+
+    /*  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+    letter-spacing: .021341463em;
+    line-height: .88 !important
 }
 
 /* navbar */

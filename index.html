@@ -24,7 +24,7 @@
           <img class="w-[220px] opacity-70 xl:w-[300px]" src="images/logo.svg" alt="Logo">
         </a>
         <ul id="ul" class="absolute bg-bage flex flex-col justify-center top-0 left-0 right-0 bottom-0 
-          lg:flex-row lg:static lg:bg-transparent gap-8 uppercase z-10 font-bold md:text-lg 
+          lg:flex-row lg:static lg:bg-transparent gap-12 uppercase z-10 font-bold md:text-lg 
           lg:text-base 2xl:text-xl transition-all duration-300 scale-50 lg:scale-100 origin-canter">
           <button id="close" class="absolute lg:hidden top-5 right-5 cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-16">
@@ -35,7 +35,7 @@
           </button>
 
           <li class="group flex flex-col items-center justify-center relative">
-            <span id="toggle-menu" class="cursor-pointer flex gap-2 items-center text-[.85em]">
+            <span id="toggle-menu" class="cursor-pointer flex gap-2 items-center text-tiny">
               services
               <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                 stroke="currentColor" class="size-6 transition-transform duration-200 lg:group-hover:rotate-180">
@@ -81,19 +81,19 @@
 
           <li class="flex items-center justify-center">
             <a href="/"
-              class="relative after:absolute  after:left-0 after:top-7 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full text-[.85em]">
+              class="relative after:absolute  after:left-0 after:top-7 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full  text-tiny">
               projects
             </a>
           </li>
           <li class="flex items-center justify-center">
             <a href="/"
-              class="relative after:absolute  after:left-0 after:top-7 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full text-[.85em]">
+              class="relative after:absolute  after:left-0 after:top-7 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full text-tiny">
               process
             </a>
           </li>
           <li class="flex items-center justify-center">
             <a href="/"
-              class="bg-[#6e9c4d] lg:bg-[#40403a] text-white xl:text-lg tracking-[3px] py-2 font-medium px-6 hover:bg-black/75 transition-all">get
+              class="bg-[#6e9c4d] lg:bg-[#40403a] text-white  text-[.85em] tracking-[1px] px-[1.45em]  py-[.50em] font-[600] hover:bg-black/75 transition-all">get
               started
             </a>
           </li>
@@ -118,22 +118,27 @@
         <img class="w-full h-full object-cover animate-kenBurns" src="/images/heroImg.webp" alt="">
       </div>
       <!-- arrow -->
-      <img class="hidden lg:block absolute bottom-5 left-28" src="/images/home-hero-arrow.svg" alt="">
+      <img class="hidden lg:block absolute bottom-24 left-21" src="/images/home-hero-arrow.svg" alt="">
       <!-- card -->
       <div
-        class="bg-white shadow-card animate-card left-1/2 md:left-[12%] -translate-x-1/2 md:translate-0 absolute mt-64 lg:mt-32 py-8 md:py-12 w-[280px] md:w-[370px] xl:w-[650px] rounded-lg">
-        <div class="hidden md:block absolute bg-blue-500 w-36 xl:w-56 h-0.5 top-28  -right-20 -rotate-45">
+        class="bg-white shadow-card animate-card left-1/2 md:left-[12%] -translate-x-1/2 md:translate-0 absolute mt-64 lg:mt-[60px] pt-8 pb-0 md:py-12 md:pb-0 w-[280px] md:w-[370px] xl:w-[580px] rounded-sm">
+        <div class="hidden md:block absolute bg-blue-500 w-48 xl:w-64 h-[1px] top-4  -right-48 -rotate-35">
 
         </div>
-        <div class="px-8 xl:px-20 lg:py-5">
-          <h1 class="text-4xl md:text-5xl xl:text-8xl lg:font-[100]">
+        <div class=" 
+        px-8  lg:py-5
+        lg:pt-[1em] lg:pr-[.5em] lg:pb-[2.84375em] lg:pl-[4.8em]">
+          <h1 class="text-4xl md:text-5xl xl:text-[4.5em] ">
             The best memories are made outdoors
           </h1>
-          <a class="bg-[#7aac57] inline-block text-white px-5 md:px-7 xl:px-10 py-2 lg:py-2.5 lg:text-md xl:text-xl lg:font-medium capitalize mt-5 xl:mt-12 hover:opacity-80 hover:underline"
-            href="/">get started</a>
+
+          <a class="bg-[#7aac57] inline-block text-white px-5 md:px-7 xl:px-[1.2em] py-2 lg:py-[.73] lg:text-md 
+           
+          xl:text-xl  font-customFont capitalize mt-5 xl:mt-12 hover:opacity-80 hover:underline" href="/">get
+            started</a>
           <span class="block text-sm xl:text-xl mt-4 text-[#7e7e72]">Established in 2005</span>
         </div>
-        <div class="mt-10 xl:mt-4 px-8">
+        <div class="mt-10 xl:mt-4 px-8 bg-bage-light py-4">
           <img src="/images/ads.webp" alt="">
         </div>
       </div>
