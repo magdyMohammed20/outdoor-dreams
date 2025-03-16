@@ -17,10 +17,11 @@ export default {
         '60px': '60px',
         },
    fontSize: {
-        'tiny': '0.85em'
+        'tiny': '.8em'
         },
    fontFamily: {
-        customFont: ['FS Neruda Light'],
+     customFont: ['FS Neruda Light'],
+     Montserrat: ['Montserrat']
         // Add more custom font families as needed
       },
         },

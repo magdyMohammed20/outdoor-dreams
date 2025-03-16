@@ -12,19 +12,19 @@
 <body class="h-screen">
   <!-- Start Upper Hero Overlay -->
   <div
-    class="absolute z-10 top-0 left-0 right-0 bg-gradient-to-b from-[#eaeaeabd] to-transparent h-[250px] opacity-100">
+    class="absolute z-10 top-0 left-0 hidden lg:block right-0 bg-gradient-to-b from-[#eaeaeabd] to-transparent h-[250px] opacity-100">
   </div>
   <!-- End Upper Hero Overlay -->
 
   <!-- Start Navbar -->
-  <nav class="lg:absolute z-10 bg-white lg:bg-transparent py-2 lg:py-12 left-0 right-0">
-    <div class="lg:w-[90%] mx-auto px-6 lg:px-0">
+  <nav class="lg:absolute z-10 bg-white lg:bg-transparent py-[8px] lg:py-10 left-0 right-0">
+    <div class="lg:w-[90.5%] mx-auto px-6 md:mx-16 lg:px-0">
       <div class="flex justify-between items-center">
         <a class="z-10" href="/">
-          <img class="w-[220px] opacity-70 xl:w-[300px]" src="images/logo.svg" alt="Logo">
+          <img class="w-[200px] md:w-[240px] opacity-70 xl:w-[11.2em]" src="images/logo.svg" alt="Logo">
         </a>
-        <ul id="ul" class="absolute bg-bage flex flex-col justify-center top-0 left-0 right-0 bottom-0 
-          lg:flex-row lg:static lg:bg-transparent gap-12 uppercase z-10 font-bold md:text-lg 
+        <ul id="ul" class="absolute bg-bage flex flex-col justify-center top-0 left-0 right-0 lg:pr-[15px] bottom-0 
+          lg:flex-row lg:static lg:bg-transparent gap-9 uppercase z-10 font-bold md:text-lg 
           lg:text-base 2xl:text-xl transition-all duration-300 scale-50 lg:scale-100 origin-canter">
           <button id="close" class="absolute lg:hidden top-5 right-5 cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-16">
@@ -34,8 +34,8 @@
             </svg>
           </button>
 
-          <li class="group flex flex-col items-center justify-center relative">
-            <span id="toggle-menu" class="cursor-pointer flex gap-2 items-center text-tiny">
+          <li class="group flex flex-col  justify-center relative">
+            <span id="toggle-menu" class="cursor-pointer flex gap-2 items-center lg:text-tiny lg:tracking-[.25em]">
               services
               <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                 stroke="currentColor" class="size-6 transition-transform duration-200 lg:group-hover:rotate-180">
@@ -81,25 +81,25 @@
 
           <li class="flex items-center justify-center">
             <a href="/"
-              class="relative after:absolute  after:left-0 after:top-7 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full  text-tiny">
+              class="relative after:absolute lg:tracking-[.25em]  after:left-0 after:top-7 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full font-Montserrat  lg:text-tiny">
               projects
             </a>
           </li>
           <li class="flex items-center justify-center">
             <a href="/"
-              class="relative after:absolute  after:left-0 after:top-7 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full text-tiny">
+              class="relative lg:tracking-[.25em] after:absolute  after:left-0 after:top-7 after:w-0 after:h-[3px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full lg:text-tiny">
               process
             </a>
           </li>
           <li class="flex items-center justify-center">
             <a href="/"
-              class="bg-[#6e9c4d] lg:bg-[#40403a] text-white  text-[.85em] tracking-[1px] px-[1.45em]  py-[.50em] font-[600] hover:bg-black/75 transition-all">get
+              class="bg-[#6e9c4d] lg:bg-[#40403a] text-white  text-[.8em] tracking-[1px] lg:tracking-[.15em] px-[1.45em]  py-[.55em] font-[600] hover:bg-black/75 transition-all">get
               started
             </a>
           </li>
         </ul>
         <button id="navTab"
-          class="cursor-pointer z-10 lg:hidden bg-blue-500/80 text-white rounded-full p-2 hover:opacity-70">
+          class="cursor-pointer z-10 lg:hidden bg-blue-500/80 text-white justify-center flex items-center rounded-full w-[40px] h-[40px] hover:opacity-70">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-7">
             <path fill-rule="evenodd"
               d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
@@ -118,25 +118,27 @@
         <img class="w-full h-full object-cover animate-kenBurns" src="/images/heroImg.webp" alt="">
       </div>
       <!-- arrow -->
-      <img class="hidden lg:block absolute bottom-24 left-21" src="/images/home-hero-arrow.svg" alt="">
+      <img class="hidden lg:block absolute bottom-54 lg:bottom-16 xl:bottom-54 left-17 xl:mb-[12px]"
+        src="/images/home-hero-arrow.svg" alt="">
       <!-- card -->
       <div
-        class="bg-white shadow-card animate-card left-1/2 md:left-[12%] -translate-x-1/2 md:translate-0 absolute mt-64 lg:mt-[60px] pt-8 pb-0 md:py-12 md:pb-0 w-[280px] md:w-[370px] xl:w-[580px] rounded-sm">
+        class="bg-white shadow-card animate-card left-1/2 md:left-[12%] -translate-x-1/2 md:translate-0 xl:-translate-x-[5px] lg:-translate-x-[-10px] absolute mt-48 lg:mt-16 xl:mt-[-95px] pt-8 pb-0 md:py-12 md:pb-0 w-[280px] md:w-[490px] xl:w-[490px] rounded-sm">
         <div class="hidden md:block absolute bg-blue-500 w-48 xl:w-64 h-[1px] top-4  -right-48 -rotate-35">
 
         </div>
         <div class=" 
         px-8  lg:py-5
-        lg:pt-[1em] lg:pr-[.5em] lg:pb-[2.84375em] lg:pl-[4.8em]">
-          <h1 class="text-4xl md:text-5xl xl:text-[4.5em] ">
+        lg:pt-[.5em] lg:pr-[2em] lg:pl-[4.1em] xl:pr-[2em] xl:pl-[4.1em] lg:pb-[1em] xl:pb-[2.24375em] ">
+          <h1 class="text-[2em] md:text-[3.5em] lg:text-[4em]  xl:text-[3.9em] ">
             The best memories are made outdoors
           </h1>
 
-          <a class="bg-[#7aac57] inline-block text-white px-5 md:px-7 xl:px-[1.2em] py-2 lg:py-[.73] lg:text-md 
+          <a class="bg-[#7aac57] inline-block text-white px-6 lg:px-5 md:px-7 xl:px-[1.3em] py-[10px] lg:py-3 xl:py-2 text-[14px] font-thin  lg:text-sm
            
-          xl:text-xl  font-customFont capitalize mt-5 xl:mt-12 hover:opacity-80 hover:underline" href="/">get
+          xl:text-[.7375em]  lg:font-customFont capitalize mt-5 lg:mt-11 xl:mt-10 hover:opacity-80 hover:underline"
+            href="/">get
             started</a>
-          <span class="block text-sm xl:text-xl mt-4 text-[#7e7e72]">Established in 2005</span>
+          <span class="block text-sm xl:text-[.7em] xl:font-[500] mt-4 text-[#7e7e72]">Established in 2005</span>
         </div>
         <div class="mt-10 xl:mt-4 px-8 bg-bage-light py-4">
           <img src="/images/ads.webp" alt="">
